@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EonGadgets</title> 
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/55135957bc.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <link rel="icon" href="./assets/logo.png" type="image/icon type">
+</head>
+<body>
+    
+    <section id="landing">
+        <nav>
+            <div class="nav_container">
+            <img class="logo_img" src="./assets/logo_transparent.png">
+            <ul class="nav_links">
+                <li><a href="#" class="nav_link">Home</a></li>
+                <li><a href="#" class="nav_link">Contact</a></li>
+                <li><a href="#features" class="nav_link nav_link--primary">Products</a></li>
+            </ul>
+            
+            <button class="btn_menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu_backdrop">
+                <button class="btn_menu btn_menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu_links">
+                    <li class="menu_list">
+                        <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#features" class="menu_link" onclick="closeMenu()">Products</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#" class="menu_link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+
+            <button class="btn_menu--norm" onclick="openMenu2()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu_backdrop--norm">
+                <button class="btn_menu--norm btn_menu--close--norm" onclick="closeMenu2()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu_links--norm">
+                    <li class="menu_list">
+                        <a href="#features" class="menu_link--norm" onclick="closeMenu2()">Login</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#" class="menu_link--norm no-cursor" onclick="closeMenu2()">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+
+
+
+        </nav>
+
+
+        <div class="vl_container">
+            
+            <h2 class="vl_name">EonGadgets&copy;</h2>
+            <div class="vl"></div>
+
+            <ul class="vl_icons"> 
+                <li>
+                <a href="https://twitter.com/MoKhan_SoftEng"> <i class="fa-brands fa-twitter icon icon1" ></i></a>    
+            </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100087970715643"> <i class="fa-brands fa-facebook icon icon2"></i></i></a>
+
+            </li>
+                <li>
+                    <a href="https://www.instagram.com/mokhan_softeng/"><i class="fa-brands fa-instagram icon icon3"></i></i></i></a>
+            </li>
+            </ul> 
+
+            <div class="vl2"></div>
+        </div>
+
+
+    
+        <header>
+            <div class="header_container">
+                <div class="header_description">
+                    <h1>EonGadgets</h1>
+                    <h2 class="desc">The UK's #1 tech store.</h2>
+                    <a href="#features">
+                        <button class="btn" href="features">Browse Products</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </header>
+
+
+        <div class="landing_product">
+            <div class="landing_container">
+                <div class="row">
+                   <h2 class="our_bestsellers">
+                       Our Bestsellers ***WORK ON SLIDER BELOW (CHECK JS AND CSS)***
+                   </h2>     
+
+
+
+                        <div class="product_landing--container product_landing--container--main">
+                            <h2 class="product_landing--title">
+                                Essential Oil Diffuser
+                            </h2>
+                            <h3 class="product_landing--description">
+                                A high-quality diffuser which leaves any<br> room smelling cozy and fresh.<br>
+                            </h3>
+                            <button class="btn buy_now">Buy Now $19.99</button>
+                            <figure id="landing_product--img">
+                                <img class="product_landing--img" src="https://cdn.thewirecutter.com/wp-content/media/2022/10/essential-oil-diffuser-2048px-4270.jpg">
+                            </figure>
+                        </div>
+
+
+                        <div class="product_landing--container no1">
+                            <h2 class="product_landing--title">
+                                POO
+                            </h2>
+                            <h3 class="product_landing--description">
+                                A high-quality diffuser which leaves any<br> room smelling cozy and fresh.<br>
+                            </h3>
+                            <button class="btn buy_now">Buy Now $19.99</button>
+                            <figure id="landing_product--img">
+                                <img class="product_landing--img" src="https://cdn.thewirecutter.com/wp-content/media/2022/10/essential-oil-diffuser-2048px-4270.jpg">
+                            </figure>
+                        </div>
+
+
+                        <div class="product_landing--container no2">
+                            <h2 class="product_landing--title">
+                                Essential Oil Diffuser
+                            </h2>
+                            <h3 class="product_landing--description">
+                                A high-quality diffuser which leaves any<br> room smelling cozy and fresh.<br>
+                            </h3>
+                            <button class="btn buy_now">Buy Now $19.99</button>
+                            <figure id="landing_product--img">
+                                <img class="product_landing--img" src="https://cdn.thewirecutter.com/wp-content/media/2022/10/essential-oil-diffuser-2048px-4270.jpg">
+                            </figure>
+                        </div>
+
+
+                        <div class="product_landing--container no3">
+                            <h2 class="product_landing--title">
+                                Essential Oil Diffuser
+                            </h2>
+                            <h3 class="product_landing--description">
+                                A high-quality diffuser which leaves any<br> room smelling cozy and fresh.<br>
+                            </h3>
+                            <button class="btn buy_now">Buy Now $19.99</button>
+                            <figure id="landing_product--img">
+                                <img class="product_landing--img" src="https://cdn.thewirecutter.com/wp-content/media/2022/10/essential-oil-diffuser-2048px-4270.jpg">
+                            </figure>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-left arrow-left"></i>
+                        <i class="fa-solid fa-chevron-right arrow-right" onclick="wheelRight()"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <a href="#features" class="scroll">
+            <div class="scroll_icon click">      
+            </div>
+        </a>
+    </section>
+
+    <main>
+
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section_title">
+                        <span class="white">Why choose EonGadgets</span>
+                    </h2>
+                    <div class="highlight_wrapper">
+
+
+
+                        <div class="highlight">
+                            <div class="highlight_img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">
+                                    Easy and Quick
+                            </h3>
+                            <p class="highlight_para">
+                                    Get free delivery for products $10+ and next day delivery.
+                            </p>
+                        </div>
+
+
+
+                        <div class="highlight">
+                            <div class="highlight_img">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">
+                                    Tons of Products
+                            </h3>
+                            <p class="highlight_para">
+                                   We offer a wide varitey of prodocts ranging from oil diffuers to handy tech gadgets.
+                            </p>
+                        </div>
+
+
+
+                        <div class="highlight">
+                            <div class="highlight_img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h3 class="highlight_subtitle">
+                                    Affordable
+                            </h3>
+                            <p class="highlight_para">
+                                    Get your hands on popular products for under $30.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>           
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section_title">
+                        Hot Products</span>
+                    </h2>
+                    <div class="books">
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Crack The Coding Interview
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Atomic Habits
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Can't Hurt Me
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Deep Work
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+
+
+
+
+
+
+
+
+
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section_title">
+                         <span class="white">New Products</span>
+                    </h2>
+                    <div class="books">
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                The 10X Rule
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Be Obsessed Or Be Average
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Rich Dad Poor Dad
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Cashflow Quadrant
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                48 Laws Of Power
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                The 5 Second Rule
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                               Your Next Five Moves
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+
+
+                        <div class="book">
+                            <figure class="book_img--wrapper">
+                                <img src="./assets/" alt="" class="book_img">
+                            </figure>
+                            <div class="book_title">
+                                Mastery
+                            </div>
+                            <div class="book_ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="book_price">
+                                <span class="book_price--normal">$15.45</span> $10.50
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="explore">
+            <div class="container">
+                <div class="row row_column">
+                    <h2>Explore More <span class="white">Products</span></h2>
+                    <a href="#features">
+                        <button class="btn2">Browse Products</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row row_column">
+                <a href="#">
+                   <img class="logo_img2" src="./assets/logo_transparent.png">
+                </a>
+                <div class="footer_list">
+                    <a href="#" class="footer_link no-cursor">Home</a>
+                    <a href="#highlights" class="footer_link no-cursor">About</a>
+                    <a href="" class="footer_link no-cursor">Products</a>
+                    <a href="" class="footer_link no-cursor">Contact</a>
+                </div>
+                <div class="footer_copyright">Copyright &copy; 2022 EonGadgets</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
